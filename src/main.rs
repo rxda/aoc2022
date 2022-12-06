@@ -1,7 +1,7 @@
 mod days;
 use std::fs;
 
-use days::{day01, day02, day03, day04};
+use days::{day01, day02, day03, day04, day05};
 
 fn main() {
     // let input = fs::read_to_string("input/day01.txt").expect("Should have been able to read the file");
@@ -16,7 +16,11 @@ fn main() {
     // day03::day03(&input);
     // day03::day03_p2(&input);
 
-    let input = fs::read_to_string("input/day04.txt").expect("Should have been able to read the file");
+    // let input = fs::read_to_string("input/day04.txt").expect("Should have been able to read the file");
     // day04::day04(&input);
-    day04::day04_p2(&input);
+    // day04::day04_p2(&input);
+
+    let input = fs::read_to_string("input/day05.txt").expect("Should have been able to read the file");
+    // day05::day05(&input);
+    day05::day05_p2(&input);
 }
