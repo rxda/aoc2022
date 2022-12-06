@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::{HashMap, HashSet};
 
 pub fn day03(input: &String) {
@@ -20,7 +21,7 @@ pub fn day03(input: &String) {
         right.chars().for_each(|c| {
             if !right_set.contains(&c) {
                 match left_map.get(&c) {
-                    Some(count) => {
+                    Some(_) => {
                         priorities_sum = priorities_sum + get_property(&c) as usize;
                     }
                     None => (),

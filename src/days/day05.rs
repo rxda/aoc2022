@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn day05(input: &String) {
     let part: Vec<&str> = input.split("\n\n").collect();
     let mut stack = read_to_stack_vec(part.get(0).unwrap());

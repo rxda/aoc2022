@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn day01(input: &String) {
     let blocks = input.split("\n\n");
     let mut max: usize = 0;

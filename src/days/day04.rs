@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn day04(input: &String) {
     let mut count = 0;
     for line in input.lines() {

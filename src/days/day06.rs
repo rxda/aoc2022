@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn day06(input: &str) {
     let chars = input.chars().collect::<Vec<char>>();
     let mut result = 0;

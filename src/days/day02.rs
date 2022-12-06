@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn day02(input: &String) {
     let lines = input.lines();
     let mut score = 0;
