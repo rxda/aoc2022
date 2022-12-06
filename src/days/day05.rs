@@ -48,7 +48,9 @@ fn move_create_once(input: &str, stack: &mut Vec<Vec<char>>) {
         }
         let to_stack = stack.get_mut(to).unwrap();
         pop_stack.reverse();
-        pop_stack.iter().for_each(|item|to_stack.push(item.unwrap()));
+        pop_stack
+            .iter()
+            .for_each(|item| to_stack.push(item.unwrap()));
     }
 }
 

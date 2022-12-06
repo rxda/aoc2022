@@ -54,9 +54,5 @@ pub fn day04_p2(input: &String) {
 }
 
 fn overlap(a1: &usize, b1: &usize, a2: &usize, b2: &usize) -> bool{
-    if !(b1 < a2 || b2 < a1){
-        true
-    }else{
-        false
-    }
+    !(b1 < a2 || b2 < a1)
 }
