@@ -1,10 +1,8 @@
 #![allow(dead_code)]
 pub fn day01(input: &String) {
-    let blocks = input.split("\n\n");
     let mut max: usize = 0;
-    for block in blocks {
-        let lines = block.split("\n");
-        let sum = lines
+    for block in input.split("\n\n") {
+        let sum = block.lines()
             .into_iter()
             .map(|num_str| num_str.parse::<usize>().unwrap())
             .sum::<usize>();

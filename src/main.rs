@@ -1,5 +1,6 @@
 #![allow(unused_imports)]
 mod days;
+mod aoc2021;
 use std::fs;
 
 use days::{day01, day02, day03, day04, day05, day06};

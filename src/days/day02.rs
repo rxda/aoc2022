@@ -1,8 +1,7 @@
 #![allow(dead_code)]
 pub fn day02(input: &String) {
-    let lines = input.lines();
     let mut score = 0;
-    for line in lines {
+    for line in input.lines() {
         let round: Vec<char> = line.chars().collect();
         let first = round.get(0).unwrap();
         let second = round.get(2).unwrap();
@@ -22,9 +21,8 @@ pub fn day02(input: &String) {
 }
 
 pub fn day02_p2(input: &String) {
-    let lines = input.lines();
     let mut score = 0;
-    for line in lines {
+    for line in input.lines() {
         let round: Vec<char> = line.chars().collect();
         let first = round.get(0).unwrap();
         let second = round.get(2).unwrap();

@@ -38,28 +38,6 @@ pub fn day03_p2(input: &String) {
     let mut i = 0;
     let lines: Vec<&str> = input.lines().collect();
     while i < lines.len() {
-        // let mut char_map: HashMap<char, usize> = HashMap::new();
-        // lines.get(i).unwrap().chars().into_iter().for_each(|c| {
-        //     char_map.insert(c, 1);
-        // });
-        // lines.get(i + 1).unwrap().chars().into_iter().for_each(|c| {
-        //     if char_map.contains_key(&c) && *char_map.get(&c).unwrap() == 1 {
-        //         char_map.insert(c, 2);
-        //     }
-        // });
-        // lines.get(i + 2).unwrap().chars().into_iter().for_each(|c| {
-        //     if char_map.contains_key(&c) && *char_map.get(&c).unwrap() == 2 {
-        //         char_map.insert(c, 3);
-        //         return;
-        //     }
-        // });
-        // for (c, count) in char_map {
-        //     if count == 3 {
-        //         priorities_sum = priorities_sum + get_property(&c) as usize;
-        //         break;
-        //     }
-        // }
-
         let line1_set: HashSet<char> = lines.get(i).unwrap().chars().collect();
         let line2_set: HashSet<char> = lines.get(i + 1).unwrap().chars().collect();
         let line3_set: HashSet<char> = lines.get(i + 2).unwrap().chars().collect();
