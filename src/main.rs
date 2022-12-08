@@ -1,9 +1,9 @@
 #![allow(unused_imports)]
-mod days;
+mod aoc2022;
 mod aoc2021;
 use std::fs;
 
-use days::{day01, day02, day03, day04, day05, day06};
+use aoc2022::{day01, day02, day03, day04, day05, day06};
 
 fn main() {
     // let input = fs::read_to_string("input/day01.txt").expect("Should have been able to read the file");
